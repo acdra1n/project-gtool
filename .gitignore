@@ -2,3 +2,5 @@ node_modules/*
 .gtoolctx.json
 TODO
 samp_*
+*.exe
+build/*
