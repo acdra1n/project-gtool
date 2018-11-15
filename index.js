@@ -23,7 +23,7 @@ async function main(argv)
     }
     var result = await command.execute(argv);
     if(typeof(result) == "number")
-        process.exit(parseInt(result));
+        process.exit(result);
 }
 
 main(getArgv());
