@@ -1,8 +1,0 @@
-Remove -- for commands
-     * they must exist for parameters
-
-     [COMPLETED]
-
-Remove variables because environment variables can be used instead
-
-    
