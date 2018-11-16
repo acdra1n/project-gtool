@@ -9,7 +9,7 @@ echo Build started [$(date)]
 echo Copying scrypt binary...
 cp ./lib/platform/windows/scrypt.node build/win -f
 cp ./lib/platform/macos/scrypt.node build/macos -f
-cp /y ./lib/platform/linux/scrypt.node build/linux -f
+cp ./lib/platform/linux/scrypt.node build/linux -f
 
 echo Copying license...
 cp ./LICENSE.MD build/win/LICENSE.MD -f
