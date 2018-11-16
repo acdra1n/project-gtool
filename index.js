@@ -21,9 +21,18 @@ async function main(argv)
         console.log("Error: command not found.\nTry `gtool help` for help.");
         return;
     }
-    var result = await command.execute(argv);
-    if(typeof(result) == "number")
-        process.exit(result);
+    var result = 255;
+    if((command.executeSync != null) && (command.executeSync))
+    {
+        command.execute(argv); //Sync commands MUST exit on their own
+    }
+    else
+    {
+        result = await command.execute(argv);
+        if(typeof(result) == "number")
+            process.exit(result);
+    }
+    
 }
 
 main(getArgv());
