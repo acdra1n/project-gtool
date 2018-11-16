@@ -1,0 +1,26 @@
+#!/bin/bash
+echo Build started [$(date)]
+
+[ ! -e build ] && mkdir build
+[ ! -e build/linux ] && mkdir build/linux
+[ ! -e build/macos ] && mkdir build/macos
+[ ! -e build/win ] && mkdir build/win
+
+echo Copying scrypt binary...
+cp ./lib/platform/windows/scrypt.node build/win -f
+cp ./lib/platform/macos/scrypt.node build/macos -f
+cp /y ./lib/platform/linux/scrypt.node build/linux -f
+
+echo Copying license...
+cp ./LICENSE.MD build/win/LICENSE.MD -f
+cp ./LICENSE.MD build/macos/LICENSE.MD -f
+cp ./LICENSE.MD build/linux/LICENSE.MD -f
+
+echo Building binary for Windows...
+pkg -t node8-win index.js -o build/win/gtool.exe > build/build_pkg_win.log
+
+echo Building binary for macOS...
+pkg -t node8-macos index.js -o build/macos/gtool > build/build_pkg_macos.log
+
+echo Building binary for Linux...
+pkg -t node8-linux index.js -o build/linux/gtool > build/build_pkg_linux.log
