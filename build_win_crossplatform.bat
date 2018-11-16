@@ -8,9 +8,9 @@ if not exist build\macos mkdir build\macos
 if not exist build\win mkdir build\win
 
 echo Copying scrypt binary...
-copy /y .\node_modules\scrypt\build\Release\scrypt.node build\win > nul
-copy /y .\node_modules\scrypt\build\Release\scrypt.node build\macos > nul
-copy /y .\node_modules\scrypt\build\Release\scrypt.node build\linux > nul
+copy /y .\lib\platform\windows\scrypt.node build\win > nul
+copy /y .\lib\platform\macos\scrypt.node build\macos > nul
+copy /y .\lib\platform\linux\scrypt.node build\linux > nul
 
 echo Copying license...
 copy /y .\LICENSE.MD build\win\LICENSE.MD > nul
