@@ -1,0 +1,33 @@
+{
+  "name": "project-gtool",
+  "version": "1.0.0",
+  "description": "Ether CLI",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "dependencies": {
+    "showdown": "^1.9.0",
+    "web3": "^1.0.0-beta.36"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techspider/project-gtool.git"
+  },
+  "keywords": [
+    "web3",
+    "ethereum",
+    "cli"
+  ],
+  "author": "mr_chainman (techspider)",
+  "license": "SEE LICENSE IN LICENSE.MD",
+  "bugs": {
+    "url": "https://github.com/techspider/project-gtool/issues"
+  },
+  "homepage": "https://github.com/techspider/project-gtool#readme"
+}
