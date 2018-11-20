@@ -5,7 +5,7 @@ GTool is a command line utility helping you interact with the ethereum blockchai
 ## What are the requirements?
 
 In order to use gtool, you must have Node.js installed.
-You have to run `install_deps` in to install dependencies.
+You have to run `install_deps` to install dependencies.
 
 Binaries are also available on the releases page if there are issues running it from source.
 
