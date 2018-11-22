@@ -652,7 +652,7 @@ mail.
 If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:
 
-        project-gtools  Copyright (C) 2018  techspider and its contributors
+        project-gtool Copyright (C) 2018 mr_chainman (techspider) and its contributors
         This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
         This is free software, and you are welcome to redistribute it
         under certain conditions; type `show c' for details.
