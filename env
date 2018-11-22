@@ -1,0 +1,5 @@
+set gt_tx_count=20
+set gt_success=true
+set gt_src=0xca160B673374763A00910d20040690466A46F4B4
+set gt_dest=0x09C5BcBD9a0F745769F27D24e08969EF611e04C3
+set gt_amount=400000000000
