@@ -2,7 +2,7 @@
   "name": "gtlib",
   "version": "0.0.4",
   "description": "The official library for project-gtool",
-  "main": "null",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
