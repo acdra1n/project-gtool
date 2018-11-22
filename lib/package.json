@@ -1,0 +1,23 @@
+{
+  "name": "gtlib",
+  "version": "0.0.4",
+  "description": "The official library for project-gtool",
+  "main": "null",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/techspider/project-gtool/lib"
+  },
+  "dependencies": {
+    "web3": "^1.0.0-beta.36"
+  },
+  "keywords": [
+    "library",
+    "ethereum",
+    "project-gtool"
+  ],
+  "author": "mr_chainman (techspider)",
+  "license": "SEE LICENSE IN LICENSE.MD"
+}
