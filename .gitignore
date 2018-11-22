@@ -6,3 +6,4 @@ samp_*
 build/*
 optional_tools/*
 gt-test*
+env
