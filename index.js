@@ -32,7 +32,6 @@ async function main(argv)
         if(typeof(result) == "number")
             process.exit(result);
     }
-    
 }
 
 main(getArgv());
