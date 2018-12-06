@@ -8,3 +8,4 @@ optional_tools/*
 gt-test*
 env
 gtool_gui/node_modules/*
+platform/gtui_build/node_modules/*

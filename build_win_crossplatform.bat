@@ -36,5 +36,5 @@ echo.
 :build_uionly
 
 echo [gtool-ui]
-echo Building gtool-ui binary for Windows...
-call node platform\windows\gtool-ui\build.js
+echo Building gtool-ui binary...
+call node platform\gtui_build\build.js

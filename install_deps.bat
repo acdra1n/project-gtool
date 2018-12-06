@@ -5,3 +5,6 @@ call npm install web3 math-expression-evaluator
 call npm install pkg npm-bundle -g
 cd gtool_gui
 call npm install
+cd ..
+cd platform\gtui_build
+npm install
