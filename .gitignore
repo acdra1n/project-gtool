@@ -7,3 +7,4 @@ build/*
 optional_tools/*
 gt-test*
 env
+gtool_gui/node_modules/*

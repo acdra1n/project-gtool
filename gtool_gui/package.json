@@ -1,0 +1,23 @@
+{
+  "name": "gtool_gui",
+  "version": "0.0.1",
+  "description": "A frontend for project gtool",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/techspider/project-gtool.git"
+  },
+  "keywords": [
+    "ethereum",
+    "gui",
+    "electron"
+  ],
+  "author": "mr_chainman (techspider)",
+  "license": "SEE LICENSE IN License.MD",
+  "dependencies": {
+    "electron": "^3.0.10"
+  }
+}

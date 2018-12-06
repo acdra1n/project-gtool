@@ -1,5 +1,11 @@
 /*
-GTool version 1.0
+project-gtool Copyright (C) mr_chainman (techspider) 2018.
+Licensed under GNU GPL v3
+
+See LICENSE.MD for more information about licensing.
+
+File: index.js
+Description: gtool index file
 */
 
 const getArgv = require("./lib/argv/argv.js").getArgv;
