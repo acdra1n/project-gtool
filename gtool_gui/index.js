@@ -12,10 +12,13 @@ const { app, BrowserWindow, Menu, MenuItem } = require('electron');
 const ui = require("./lib/ui/ui");
 const cp = require('child_process');
 const os = require('os');
+const relInfo = require('../lib/release/vinf');
 
 let window = null;
 
 app.once('ready', () => {
+    app.setName("gtool-ui");
+    app.setVersion(relInfo.version_string);
     window = new BrowserWindow({
         width: 800,
         height: 600,
@@ -35,6 +38,26 @@ app.once('ready', () => {
                 click: (menuItem, browserWindow, event)=> {
                     process.exit();
                 }
+            })
+        ]
+    }));
+
+    menu.append(new MenuItem({
+        label: "Tools",
+        type: "submenu",
+        submenu: [
+            new MenuItem({
+                label: "Developer Tools",
+                type: "submenu",
+                submenu: [
+                    new MenuItem({
+                        label: "Open Dev Tools",
+                        type: "normal",
+                        click: (menuitem, browserWindow, event)=>{
+                            browserWindow.inspectElement(0, 0);
+                        }
+                    })
+                ]
             })
         ]
     }));
@@ -86,7 +109,7 @@ app.once('ready', () => {
             }),
         ]
     }));
-    
+
     Menu.setApplicationMenu(menu);
     var mui = new ui.GTUserInterface(window, "index.html");
     mui.load();
