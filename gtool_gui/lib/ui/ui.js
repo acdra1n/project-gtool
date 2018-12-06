@@ -26,6 +26,9 @@ class GTUserInterface
         this.window = window;
         this.uipath = uif_path;
     }
+    /**
+     * Load the window
+     */
     load()
     {
         var window = this.window;
