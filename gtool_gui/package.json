@@ -18,6 +18,7 @@
   "author": "mr_chainman (techspider)",
   "license": "SEE LICENSE IN License.MD",
   "dependencies": {
+    "asar": "^0.14.5",
     "electron": "^3.0.10"
   }
 }
