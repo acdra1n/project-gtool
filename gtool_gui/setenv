@@ -1,0 +1,4 @@
+#!/bin/bash
+echo Setting up gtool ui development environment...
+export PATH=$PATH$:$(pwd)/..
+echo Finished!

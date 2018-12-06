@@ -8,7 +8,7 @@ File: index.js
 Description: gtool frontend index file
 */
 
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, Menu, MenuItem } = require('electron');
 const ui = require("./lib/ui/ui");
 
 let window = null;
@@ -21,6 +21,30 @@ app.once('ready', () => {
         backgroundColor: "#FFFFFF",
         show: false
     });
+    var menu = new Menu();
+    let fileMenu = null;
+
+    menu.append(fileMenu = new MenuItem({
+        label: "File",
+        type: "submenu",
+        submenu: [
+            new MenuItem({
+                type: "normal",
+                label: "Test Menu Item",
+            }),
+            new MenuItem({
+                type: "separator"
+            }),
+            new MenuItem({
+                label: "Exit",
+                click: (menuItem, browserWindow, event)=> {
+                    process.exit();
+                }
+            })
+        ]
+    }));
+    
+    Menu.setApplicationMenu(menu);
     var mui = new ui.GTUserInterface(window, "index.html");
     mui.load();
 })
