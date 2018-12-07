@@ -5,6 +5,7 @@ npm install web3 math-expression-evaluator
 npm install pkg npm-bundle -g
 cd gtool_gui
 npm install
+./node_modules/.bin/electron-rebuild
 cd ..
 cd platform/gtui_build
 npm install

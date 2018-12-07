@@ -24,3 +24,5 @@ pkg -t node8-macos index.js -o build/macos/gtool > build/build_pkg_macos.log
 
 echo Building binary for Linux...
 pkg -t node8-linux index.js -o build/linux/gtool > build/build_pkg_linux.log
+
+#TODO add UI build to script
