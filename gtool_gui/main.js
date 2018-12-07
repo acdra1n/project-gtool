@@ -12,7 +12,7 @@ const { app, BrowserWindow, Menu, MenuItem } = require('electron');
 const ui = require("./lib/ui/ui");
 const cp = require('child_process');
 const os = require('os');
-const relInfo = require('../lib/release/vinf');
+const relInfo = require('./lib/release/vinf');
 
 let window = null;
 

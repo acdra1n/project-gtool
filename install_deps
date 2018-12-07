@@ -2,7 +2,7 @@
 echo "Installing dependencies for project-gtool..."
 #TODO add version specifier for web3
 npm install web3 math-expression-evaluator
-npm install pkg npm-bundle -g
+npm install pkg npm-bundle asar -g
 cd gtool_gui
 npm install
 ./node_modules/.bin/electron-rebuild

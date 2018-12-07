@@ -36,5 +36,9 @@ echo.
 :build_uionly
 
 echo [gtool-ui]
+echo Building electron modules
+cd gtool_gui
+call electron_rebuild.cmd
+cd ..
 echo Building gtool-ui binary...
 call node platform\gtui_build\build.js
