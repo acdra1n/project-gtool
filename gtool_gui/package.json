@@ -2,9 +2,9 @@
   "name": "gtool_gui",
   "version": "0.0.1",
   "description": "A frontend for project gtool",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "start": "electron index.js"
+    "start": "electron main.js"
   },
   "repository": {
     "type": "git",
