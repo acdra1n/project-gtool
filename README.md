@@ -11,7 +11,7 @@ You have to run `install_deps` to install dependencies.
 Binaries are also available on the releases page if there are issues running it from source.
 Note that there is a waiting period whenever a new release is uploaded.
 
-##Building gtool
+## Building gtool
 
 Building gtool is very simple, although you must make sure you ran the `install_deps` script beforehand.
 All you have to do is run `build_win_crossplatform` if you are on Windows or run `build_nix_crossplatform` if you are on a nix platform (e.g. macOS, Linux).
