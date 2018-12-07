@@ -4,7 +4,7 @@ Licensed under GNU GPL v3
 
 See LICENSE.MD for more information about licensing.
 
-File: index.js
+File: main.js
 Description: gtool frontend index file
 */
 
