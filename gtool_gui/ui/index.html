@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>GTool Alpha 0.0.4</title>
+        <title id="title">GTool</title>
+        <script>
+        var path = require('path');
+        var relInfo = require(path.join(__dirname, "../../lib/release/vinf.js"));
+        document.getElementById("title").innerText = `project-gtool ${relInfo.version_string}`;
+        </script>
+        <script src="../lib/dev/devtools.js"></script>
     </head>
 </html>
