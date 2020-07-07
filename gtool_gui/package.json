@@ -19,7 +19,7 @@
   "license": "SEE LICENSE IN License.MD",
   "dependencies": {
     "asar": "^0.14.5",
-    "electron": "^3.0.10",
+    "electron": "^7.2.4",
     "web3": "^1.0.0-beta.36"
   },
   "devDependencies": {
